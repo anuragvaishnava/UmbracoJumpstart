@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "Master.cshtml";
+	var property = Umbraco.Field("writerName", altFieldAlias:"creatorName");
+
+}
+
+
+
+
+@* the fun starts here *@
+<h1>
+@property
+
+</h1>
+
+@Umbraco.RenderMacro("MyMacro")
